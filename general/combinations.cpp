@@ -87,8 +87,8 @@ int main()
 
     std::vector< std::vector<unsigned int> > indexes = comb.indexes();
     for (auto aa = indexes.begin(); aa != indexes.end(); ++aa) {
-        for (auto bb = aa->begin(); bb != aa->end(); ++bb) {
-            std::cout << " " << *bb;
+        for (auto bb : *aa) {
+            std::cout << " " << bb;
         }
         std::cout << std::endl;
     }
